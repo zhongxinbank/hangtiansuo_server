@@ -47,8 +47,8 @@ GET http://127.0.0.1:80/?user_id=123456&expire_time=600&mode=0
 * `status`: 本次调用的结果（code）以及说明信息（message）。
 * `output`: 系统返回的对于此次输入`user_input`的回复结果。
 * `ended`: 系统返回的关于此轮对话是否结束的标记（`1`表示结束，`0`表示未结束）。**注意：在对话结束后再调用此API将会失败并得到一个错误提示。**
-* `action_info`: **为测试/调试预留。**一个JSON对象，包含字段`user_action`和`response_action`。其中`user_action`为对用户输入的意图识别结果（字符串）；`response_action`为回复意图（字符串）。
-* `inner_error`: **为测试/调试预留。**若成功调用，为一个空字符串；否则，当内部系统出现错误（抛出异常）时，会将异常的traceback信息放到此字段中。
+* `action_info`: **为测试/调试预留。** 一个JSON对象，包含字段`user_action`和`response_action`。其中`user_action`为对用户输入的意图识别结果（字符串）；`response_action`为回复意图（字符串）。
+* `inner_error`: **为测试/调试预留。** 若成功调用，为一个空字符串；否则，当内部系统出现错误（抛出异常）时，会将异常的traceback信息放到此字段中。
 
 ##### 成功调用示例
 ```
